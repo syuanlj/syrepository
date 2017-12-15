@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 汽车列表 -->
+    <declare-styleable name="transport_car_list" >
+        <attr name="txt" format="string" />
+        <attr name="isChecked" format="boolean" />
+        <attr name="image_down" format="reference" />
+        <attr name="image_up" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="driver_app_name">货匠司机</string>
+    <string name="driver_home_page_string">首页</string>
+    <string name="driver_order_string">订单</string>
+    <string name="driver_mine_string">我的</string>
+    <string name="driver_order_detail">订单详情</string>
+    <string name="driver_main_title">货匠司机</string>
+    <string name="driver_forget_pwd_string">找回密码</string>
+    <string name="driver_login_string">登录</string>
+    <string name="driver_code_string">获取验证码</string>
+    <string name="driver_register_string">注册</string>
+    <string name="driver_purse">51钱包</string>
+    <string name="driver_center_string">个人信息</string>
+    <string name="driver_settings_string">设置</string>
+    <string name="driver_save_string">保存</string>
+    <string name="driver_driver_string">司机认证</string>
+    <string name="driver_front_idcard_string">正面上传</string>
+    <string name="driver_back_idcard_string">反面上传</string>
+    <string name="driver_upload_string">上传</string>
+    <string name="driver_account_string">账户中心</string>
+    <string name="add_account_apply_string">增加提现账户</string>
+</resources>

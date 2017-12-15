@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/Theme.customer.ToolBar"
+        android:background="@color/transport_colorPrimary">
+
+        <EditText
+            android:id="@+id/transport_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:hint="搜索地点"
+            android:textColor="@color/sky_color_white"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/sky_color_white"
+            android:textSize="@dimen/sky_font_size_16"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- 搜索列表 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/transport_search_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/sky_color_e4e4e4"
+            android:dividerHeight="0.5dp">
+
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/transport_search_loading"
+            android:layout_width="@dimen/sky_dp_size_25"
+            android:layout_height="@dimen/sky_dp_size_25"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/transport_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:background="@color/sky_color_f2f2f2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/sky_color_white">
+
+            <RelativeLayout
+                android:id="@+id/transport_1_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_47">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_5e5e5e"
+                    android:textSize="@dimen/sky_font_size_16"
+                    android:text="搬运(司机另议)"
+                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                    android:layout_centerVertical="true"/>
+
+                <CheckBox
+                    android:layout_width="@dimen/sky_dp_size_15"
+                    android:layout_height="@dimen/sky_dp_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sky_dp_size_12"
+                    android:button="@null"
+                    android:background="@drawable/transport_checkbox_selector"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_horizontal_line" />
+
+            <RelativeLayout
+                android:id="@+id/transport_2_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_47">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_5e5e5e"
+                    android:textSize="@dimen/sky_font_size_16"
+                    android:text="回单"
+                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                    android:layout_centerVertical="true"/>
+
+                <CheckBox
+                    android:layout_width="@dimen/sky_dp_size_15"
+                    android:layout_height="@dimen/sky_dp_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sky_dp_size_12"
+                    android:button="@null"
+                    android:background="@drawable/transport_checkbox_selector"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <!--<View style="@style/grey_horizontal_line" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/transport_3_rl"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/sky_dp_size_47">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/sky_color_5e5e5e"-->
+                    <!--android:textSize="@dimen/sky_font_size_16"-->
+                    <!--android:text="返程(附加40%路费)"-->
+                    <!--android:layout_marginLeft="@dimen/sky_dp_size_12"-->
+                    <!--android:layout_centerVertical="true"/>-->
+
+                <!--<CheckBox-->
+                    <!--android:layout_width="@dimen/sky_dp_size_15"-->
+                    <!--android:layout_height="@dimen/sky_dp_size_15"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="@dimen/sky_dp_size_12"-->
+                    <!--android:button="@null"-->
+                    <!--android:background="@drawable/transport_checkbox_selector"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <View style="@style/grey_horizontal_line" />
+
+            <RelativeLayout
+                android:id="@+id/transport_4_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_47">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_5e5e5e"
+                    android:textSize="@dimen/sky_font_size_16"
+                    android:text="板车"
+                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                    android:layout_centerVertical="true"/>
+
+                <CheckBox
+                    android:layout_width="@dimen/sky_dp_size_15"
+                    android:layout_height="@dimen/sky_dp_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sky_dp_size_12"
+                    android:button="@null"
+                    android:background="@drawable/transport_checkbox_selector"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_horizontal_line" />
+
+            <RelativeLayout
+                android:id="@+id/transport_5_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_47">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_5e5e5e"
+                    android:textSize="@dimen/sky_font_size_16"
+                    android:text="代收贷款"
+                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                    android:layout_centerVertical="true"/>
+
+                <CheckBox
+                    android:layout_width="@dimen/sky_dp_size_15"
+                    android:layout_height="@dimen/sky_dp_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/sky_dp_size_12"
+                    android:button="@null"
+                    android:background="@drawable/transport_checkbox_selector"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transport_confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_56"
+        android:text="确认"
+        android:textColor="@color/sky_color_white"
+        android:textSize="@dimen/sky_font_size_18"
+        android:background="@color/sky_color_00a5ea"
+        android:gravity="center"/>
+
+</LinearLayout>

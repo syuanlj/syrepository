@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/driver_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/sky_color_f2f2f2">
+
+        <TextView
+            android:id="@+id/driver_money_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_76"
+            android:text="¥0.00"
+            android:textColor="@color/sky_color_black"
+            android:textSize="@dimen/sky_font_size_21"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_107"
+            android:padding="@dimen/sky_dp_size_17"
+            android:background="@color/sky_color_white">
+
+            <ImageView
+                android:layout_width="@dimen/sky_dp_size_9"
+                android:layout_height="@dimen/sky_dp_size_56"
+                android:src="@mipmap/driver_label_location_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/driver_begin_addr_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_010101"
+                android:textSize="@dimen/sky_font_size_13"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/sky_dp_size_13"/>
+
+            <TextView
+                android:id="@+id/driver_begin_addr_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_989898"
+                android:textSize="@dimen/sky_font_size_13"
+                android:layout_below="@id/driver_begin_addr_name_tv"
+                android:layout_marginLeft="@dimen/sky_dp_size_13"
+                android:layout_marginTop="@dimen/sky_dp_size_0_5"/>
+
+            <TextView
+                android:id="@+id/driver_end_addr_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_989898"
+                android:textSize="@dimen/sky_font_size_13"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/sky_dp_size_13"/>
+
+            <TextView
+                android:id="@+id/driver_end_addr_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_010101"
+                android:textSize="@dimen/sky_font_size_13"
+                android:layout_above="@id/driver_end_addr_detail_tv"
+                android:layout_marginLeft="@dimen/sky_dp_size_13"
+                android:layout_marginBottom="@dimen/sky_dp_size_0_5"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/driver_extra_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_72"
+            android:paddingTop="@dimen/sky_dp_size_12"
+            android:paddingLeft="@dimen/sky_dp_size_19"
+            android:paddingRight="@dimen/sky_dp_size_19"
+            android:text="额外需求："
+            android:textColor="@color/sky_color_989898"
+            android:textSize="@dimen/sky_font_size_14"
+            android:layout_marginTop="@dimen/sky_dp_size_12"
+            android:background="@color/sky_color_white"/>
+
+        <TextView
+            android:id="@+id/driver_remark_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_72"
+            android:paddingTop="@dimen/sky_dp_size_12"
+            android:paddingLeft="@dimen/sky_dp_size_19"
+            android:paddingRight="@dimen/sky_dp_size_19"
+            android:text="备注："
+            android:textColor="@color/sky_color_989898"
+            android:textSize="@dimen/sky_font_size_14"
+            android:layout_marginTop="@dimen/sky_dp_size_12"
+            android:background="@color/sky_color_white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_66"
+            android:layout_marginTop="@dimen/sky_dp_size_12"
+            android:background="@color/sky_color_white"
+            android:paddingLeft="@dimen/sky_dp_size_19">
+
+            <TextView
+                android:id="@+id/driver_begin_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布时间："
+                android:textSize="@dimen/sky_font_size_14"
+                android:textColor="@color/sky_color_333333"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/sky_dp_size_12"/>
+
+            <TextView
+                android:id="@+id/driver_end_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截止时间："
+                android:textSize="@dimen/sky_font_size_14"
+                android:textColor="@color/sky_color_333333"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/sky_dp_size_12"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/driver_call_car_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_56"
+        android:text="接单"
+        android:textColor="@color/sky_color_white"
+        android:textSize="@dimen/sky_font_size_18"
+        android:gravity="center"
+        android:background="@color/sky_color_00a5ea"/>
+</LinearLayout>

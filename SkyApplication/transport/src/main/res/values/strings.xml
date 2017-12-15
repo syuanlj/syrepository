@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transport_app_name">货匠</string>
+    <string name="transport_main_title">货匠</string>
+    <string name="transport_navigation_drawer_open">打开</string>
+    <string name="transport_navigation_drawer_close">关闭</string>
+    <string name="transport_sider_order">订单</string>
+    <string name="transport_sider_purse">51钱包</string>
+    <string name="transport_sider_settings">设置</string>
+    <string name="transport_car_1_string">电瓶车</string>
+    <string name="transport_car_2_string">摩托车</string>
+    <string name="transport_car_3_string">小型面包车</string>
+    <string name="transport_car_4_string">中型面包车</string>
+    <string name="transport_car_5_string">小型货车</string>
+    <string name="transport_car_6_string">中型货车</string>
+    <string name="transport_extra_string">添加额外需求</string>
+    <string name="transport_price_detail_string">价格明细</string>
+    <string name="transport_confirm_order_string">确认下单</string>
+    <string name="transport_homepage_string">首页</string>
+    <string name="transport_order_string">订单</string>
+    <string name="transport_center_string">个人信息</string>
+    <string name="transport_login_string">登录</string>
+    <string name="transport_code_string">获取验证码</string>
+    <string name="transport_forget_pwd_string">找回密码</string>
+    <string name="transport_register_string">注册</string>
+    <string name="transport_save_string">保存</string>
+    <string name="transport_search_string">搜索</string>
+    <string name="transport_location_string">定位</string>
+    <string name="transport_settings_string">设置</string>
+    <string name="transport_order_detail">订单详情</string>
+</resources>

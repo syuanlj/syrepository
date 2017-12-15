@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/sky_dp_size_125"
+    android:layout_width="match_parent"
+    android:background="@color/sky_color_white"
+    android:paddingLeft="@dimen/sky_dp_size_18"
+    android:paddingRight="@dimen/sky_dp_size_18"
+    android:paddingTop="@dimen/sky_dp_size_17"
+    android:paddingBottom="@dimen/sky_dp_size_17">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/driver_user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:textSize="@dimen/sky_font_size_16"
+            android:textColor="@color/sky_color_333333"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/driver_publish_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布于"
+            android:singleLine="true"
+            android:textSize="@dimen/sky_font_size_10"
+            android:textColor="@color/sky_color_999999"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_45"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/driver_addr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_666666"
+            android:textSize="@dimen/sky_font_size_15"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/driver_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_da4932"
+            android:textSize="@dimen/sky_font_size_15"
+            android:text="¥0元"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/sky_dp_size_14"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/driver_end_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截止"
+            android:singleLine="true"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_666666"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/driver_distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0km"
+            android:singleLine="true"
+            android:textSize="@dimen/sky_font_size_13"
+            android:textColor="@color/sky_color_666666"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

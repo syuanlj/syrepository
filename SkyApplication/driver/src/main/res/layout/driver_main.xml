@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:id="@+id/driver_framework_rl">
+
+    <LinearLayout
+        android:id="@+id/driver_navigarion_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sky_color_white"
+        android:gravity="center">
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/driver_home_page"
+            style="@style/tab_navigation_style"
+            app:image_down="@mipmap/driver_home_page_selected_icon"
+            app:image_up="@mipmap/driver_home_page_unselected_icon"
+            app:textOne="@string/driver_home_page_string" />
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/driver_order"
+            style="@style/tab_navigation_style"
+            android:layout_gravity="center"
+            app:image_down="@mipmap/driver_order_selected_icon"
+            app:image_up="@mipmap/driver_order_unselected_icon"
+            app:textOne="@string/driver_order_string" />
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/driver_center"
+            style="@style/tab_navigation_style"
+            android:layout_gravity="center"
+            app:image_down="@mipmap/driver_mine_selected_icon"
+            app:image_up="@mipmap/driver_mine_unselected_icon"
+            app:textOne="@string/driver_mine_string" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/driver_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/driver_navigarion_ll" />
+
+    <View style="@style/grey_0_3_horizontal_line"
+        android:layout_above="@id/driver_navigarion_ll"/>
+</RelativeLayout>

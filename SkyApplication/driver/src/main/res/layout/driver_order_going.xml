@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12">
+        <RelativeLayout
+            android:layout_height="@dimen/sky_dp_size_125"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/sky_dp_size_17"
+            android:paddingBottom="@dimen/sky_dp_size_17"
+            android:paddingLeft="@dimen/sky_dp_size_6"
+            android:paddingRight="@dimen/sky_dp_size_6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/driver_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:textSize="@dimen/sky_font_size_16"
+                    android:textColor="@color/sky_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/driver_publish_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布于"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sky_font_size_10"
+                    android:textColor="@color/sky_color_999999"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_45"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/driver_addr_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:singleLine="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/driver_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_da4932"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:text="¥0元"
+                    android:singleLine="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/sky_dp_size_14"
+                    android:layout_alignParentLeft="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/driver_end_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_666666"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/driver_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.2km"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sky_font_size_13"
+                    android:textColor="@color/sky_color_666666"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.sky.app.library.component.DashView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            app:dashWidth="@dimen/sky_dp_size_1"
+            app:lineWidth="@dimen/sky_dp_size_3"
+            app:lineColor="@color/sky_color_999999"
+            app:dashOrientation="0"
+            app:lineHeight="0.5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_47">
+
+            <Button
+                android:id="@+id/driver_finished_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sky_dp_size_25"
+                android:background="@drawable/driver_catch_order_shape_selector"
+                android:text="订单完成"
+                android:textColor="@color/sky_color_white"
+                android:textSize="@dimen/sky_font_size_14"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/sky_dp_size_8"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

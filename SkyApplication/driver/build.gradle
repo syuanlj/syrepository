@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    signingConfigs {
+        driver_sign {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storePassword '51gongjiang'
+            storeFile file('/Users/fujitsu/Downloads/sky_1.jks')
+        }
+        driver_test_sign {
+            keyAlias 'sky'
+            keyPassword '123456'
+            storePassword '123456'
+            storeFile file('/Users/fujitsu/Downloads/sky_test.jks')
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.sky.driver"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 10
+        versionName "2.0"
+        signingConfig signingConfigs.driver_test_sign
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.driver_sign
+        }
+        debug {
+            signingConfig signingConfigs.driver_test_sign
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library')
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile files('libs/BaiduLBS_Android.jar')
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/driver_normal_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky_color_f2f2f2"
+        android:paddingLeft="@dimen/sky_dp_size_33"
+        android:paddingRight="@dimen/sky_dp_size_33"
+        android:paddingTop="@dimen/sky_dp_size_40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传身份证正反面"
+                android:textSize="@dimen/sky_font_size_14"
+                android:textColor="@color/sky_color_207ebf"
+                android:gravity="left"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/driver_grey_shape"
+                android:layout_marginTop="@dimen/sky_dp_size_16">
+
+                <Button
+                    android:id="@+id/driver_front_btn"
+                    android:layout_width="@dimen/sky_dp_size_128"
+                    android:layout_height="@dimen/sky_dp_size_37"
+                    android:background="@drawable/driver_send_code_corners_shape_selector"
+                    android:text="@string/driver_front_idcard_string"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_00a5ea"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <ImageView
+                    android:id="@+id/driver_front_iv"
+                    android:layout_width="@dimen/sky_dp_size_314"
+                    android:layout_height="@dimen/sky_dp_size_180"
+                    android:scaleType="fitXY"/>
+                
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/driver_grey_shape"
+                android:layout_marginTop="@dimen/sky_dp_size_25">
+
+                <Button
+                    android:id="@+id/driver_back_btn"
+                    android:layout_width="@dimen/sky_dp_size_128"
+                    android:layout_height="@dimen/sky_dp_size_37"
+                    android:background="@drawable/driver_send_code_corners_shape_selector"
+                    android:text="@string/driver_back_idcard_string"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_00a5ea"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <ImageView
+                    android:id="@+id/driver_back_iv"
+                    android:layout_width="@dimen/sky_dp_size_314"
+                    android:layout_height="@dimen/sky_dp_size_180"
+                    android:scaleType="fitXY"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/driver_next_btn"
+            android:layout_width="@dimen/sky_dp_size_164"
+            android:layout_height="@dimen/sky_dp_size_34"
+            android:text="下一步"
+            android:textSize="@dimen/sky_font_size_19"
+            android:textColor="@color/sky_color_white"
+            android:background="@color/sky_color_00a5ea"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/sky_dp_size_18"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

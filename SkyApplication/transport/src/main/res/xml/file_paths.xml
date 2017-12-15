@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path path="com.sky.transport/images/" name="camera_photos" />
+        <external-path path="com.sky.transport/package/" name="apk" />
+    </paths>
+</resources>

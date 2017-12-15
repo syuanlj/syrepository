@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transport_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 主页 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/sky_color_f2f2f2">
+
+        <!-- 头部 -->
+        <include layout="@layout/transport_header_main" />
+
+        <!-- 主页内容 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/sky_dp_size_13">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_0"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="91dp"
+                        android:orientation="horizontal"
+                        android:background="@color/sky_color_white">
+
+                        <!--<com.sky.transport.utils.CarRaidoButton-->
+                            <!--android:id="@+id/transport_1_btn"-->
+                            <!--style="@style/car_navigation_style"-->
+                            <!--app:image_down="@mipmap/transport_car_down_1_icon"-->
+                            <!--app:image_up="@mipmap/transport_car_up_1_icon"-->
+                            <!--app:txt="@string/transport_car_1_string"-->
+                            <!--android:tag="CT10000"/>-->
+
+                        <!--<View style="@style/homepage_grey_vertical_line"-->
+                            <!--android:layout_marginTop="@dimen/sky_dp_size_14"-->
+                            <!--android:layout_marginBottom="@dimen/sky_dp_size_14"/>-->
+
+                        <!--<com.sky.transport.utils.CarRaidoButton-->
+                            <!--android:id="@+id/transport_2_btn"-->
+                            <!--style="@style/car_navigation_style"-->
+                            <!--app:image_down="@mipmap/transport_car_down_2_icon"-->
+                            <!--app:image_up="@mipmap/transport_car_up_2_icon"-->
+                            <!--app:txt="@string/transport_car_2_string"-->
+                            <!--android:tag="CT10001"/>-->
+
+                        <!--<View style="@style/homepage_grey_vertical_line"-->
+                            <!--android:layout_marginTop="@dimen/sky_dp_size_14"-->
+                            <!--android:layout_marginBottom="@dimen/sky_dp_size_14"/>-->
+
+                        <com.sky.transport.utils.CarRaidoButton
+                            android:id="@+id/transport_3_btn"
+                            style="@style/car_navigation_style"
+                            app:image_down="@mipmap/transport_car_down_3_icon"
+                            app:image_up="@mipmap/transport_car_up_3_icon"
+                            app:txt="@string/transport_car_3_string"
+                            android:tag="CT10002"/>
+
+                        <View style="@style/homepage_grey_vertical_line"
+                            android:layout_marginTop="@dimen/sky_dp_size_14"
+                            android:layout_marginBottom="@dimen/sky_dp_size_14"/>
+
+                        <com.sky.transport.utils.CarRaidoButton
+                            android:id="@+id/transport_4_btn"
+                            style="@style/car_navigation_style"
+                            app:image_down="@mipmap/transport_car_down_4_icon"
+                            app:image_up="@mipmap/transport_car_up_4_icon"
+                            app:txt="@string/transport_car_4_string"
+                            android:tag="CT10003"/>
+
+                        <View style="@style/homepage_grey_vertical_line"
+                            android:layout_marginTop="@dimen/sky_dp_size_14"
+                            android:layout_marginBottom="@dimen/sky_dp_size_14"/>
+
+                        <com.sky.transport.utils.CarRaidoButton
+                            android:id="@+id/transport_5_btn"
+                            style="@style/car_navigation_style"
+                            app:image_down="@mipmap/transport_car_down_5_icon"
+                            app:image_up="@mipmap/transport_car_up_5_icon"
+                            app:txt="@string/transport_car_5_string"
+                            android:tag="CT10004"/>
+
+                        <View style="@style/homepage_grey_vertical_line"
+                            android:layout_marginTop="@dimen/sky_dp_size_14"
+                            android:layout_marginBottom="@dimen/sky_dp_size_14"/>
+
+                        <com.sky.transport.utils.CarRaidoButton
+                            android:id="@+id/transport_6_btn"
+                            style="@style/car_navigation_style"
+                            app:image_down="@mipmap/transport_car_down_6_icon"
+                            app:image_up="@mipmap/transport_car_up_6_icon"
+                            app:txt="@string/transport_car_6_string"
+                            android:tag="CT10005"/>
+
+                    </LinearLayout>
+
+                    <View style="@style/grey_horizontal_line"/>
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/sky_dp_size_37"-->
+                        <!--android:background="@color/sky_color_white">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="特殊规格选项"-->
+                            <!--android:textSize="@dimen/sky_font_size_14"-->
+                            <!--android:textColor="@color/sky_color_808080"-->
+                            <!--android:layout_marginLeft="@dimen/sky_dp_size_17"-->
+                            <!--android:layout_centerVertical="true"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="@dimen/sky_dp_size_17"-->
+                            <!--android:layout_height="@dimen/sky_dp_size_9"-->
+                            <!--android:src="@mipmap/transport_arrow_down_icon"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_marginRight="@dimen/sky_dp_size_17"-->
+                            <!--android:layout_centerVertical="true"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sky_dp_size_107"
+                        android:layout_marginTop="@dimen/sky_dp_size_13"
+                        android:paddingLeft="@dimen/sky_dp_size_17"
+                        android:paddingTop="@dimen/sky_dp_size_15"
+                        android:paddingBottom="@dimen/sky_dp_size_15"
+                        android:paddingRight="@dimen/sky_dp_size_17"
+                        android:background="@color/sky_color_white"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/location_tmp_iv"
+                            android:layout_width="@dimen/sky_dp_size_9"
+                            android:layout_height="@dimen/sky_dp_size_56"
+                            android:src="@mipmap/transport_label_location_icon"
+                            android:layout_centerVertical="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/transport_begin_rl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true">
+
+                            <TextView
+                                android:id="@+id/transport_begin_location1_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/sky_color_010101"
+                                android:textSize="@dimen/sky_font_size_13"
+                                android:hint="按此输入地点"
+                                android:textColorHint="@color/sky_color_010101"
+                                android:maxLength="20"
+                                android:layout_marginLeft="@dimen/sky_dp_size_15"/>
+
+                            <TextView
+                                android:id="@+id/transport_begin_detail1_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/sky_color_989898"
+                                android:textSize="@dimen/sky_font_size_13"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:layout_below="@id/transport_begin_location1_tv"
+                                android:layout_marginLeft="@dimen/sky_dp_size_15"
+                                android:layout_marginTop="@dimen/sky_dp_size_0_3"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/transport_end_rl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <TextView
+                                android:id="@+id/transport_begin_location2_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/sky_color_010101"
+                                android:textColorHint="@color/sky_color_010101"
+                                android:textSize="@dimen/sky_font_size_13"
+                                android:hint="按此输入目的地"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:layout_marginLeft="@dimen/sky_dp_size_15"
+                                android:layout_marginBottom="@dimen/sky_dp_size_0_3"/>
+
+                            <TextView
+                                android:id="@+id/transport_begin_detail2_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/sky_color_989898"
+                                android:textSize="@dimen/sky_font_size_13"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:layout_below="@id/transport_begin_location2_tv"
+                                android:layout_marginLeft="@dimen/sky_dp_size_15"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/sky_dp_size_20"
+                            android:layout_height="@dimen/sky_dp_size_20"
+                            android:src="@mipmap/transport_begin_location_icon"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/sky_dp_size_20"
+                            android:layout_height="@dimen/sky_dp_size_20"
+                            android:src="@mipmap/transport_end_location_icon"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sky_dp_size_156"
+                        android:layout_marginTop="@dimen/sky_dp_size_13"
+                        android:background="@color/sky_color_white"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/sky_dp_size_17"
+                        android:paddingRight="@dimen/sky_dp_size_17"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:id="@+id/transport_extra_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sky_dp_size_39"
+                            style="@style/normal_shape_viewgroup_selector"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/transport_tmp_1_iv"
+                                android:layout_width="@dimen/sky_dp_size_16"
+                                android:layout_height="@dimen/sky_dp_size_16"
+                                android:src="@mipmap/transport_plus_icon"
+                                android:layout_centerVertical="true"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="添加额外需求"
+                                android:textColor="@color/sky_color_4d4d4d"
+                                android:textSize="@dimen/sky_font_size_14"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/transport_tmp_1_iv"
+                                android:layout_marginLeft="@dimen/sky_dp_size_13"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/transport_remark_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sky_dp_size_79"
+                            android:gravity="start"
+                            android:hint="备注（如货物类型及跟车人数）"
+                            android:background="@drawable/transport_homepage_grey_shape"
+                            android:selectAllOnFocus="true"
+                            android:textColor="@color/sky_color_808080"
+                            android:textSize="@dimen/sky_font_size_14"
+                            android:padding="@dimen/sky_dp_size_7"
+                            android:layout_below="@id/transport_extra_rl"
+                            android:layout_marginTop="@dimen/sky_dp_size_11"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/sky_color_white">
+
+                <!--显示／隐藏价格-->
+                <RelativeLayout
+                    android:id="@+id/transport_distance_money_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_44"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥30"
+                        android:textColor="@color/sky_color_black"
+                        android:textSize="@dimen/sky_font_size_22"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id="@+id/transport_price_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sky_font_size_16"
+                        android:textColor="@color/sky_color_da4932"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/sky_dp_size_17"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_56"
+                    android:background="@color/sky_color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/transport_confirm_order_tv"
+                        android:layout_width="@dimen/sky_dp_size_0"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="即时用车(20分钟内)"
+                        android:gravity="center"
+                        android:textColor="@color/sky_color_white"
+                        android:textSize="@dimen/sky_font_size_17"
+                        android:background="@color/sky_color_00a5ea"/>
+
+                    <RelativeLayout
+                        android:id="@+id/transport_order_rl"
+                        android:layout_width="@dimen/sky_dp_size_119"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/sky_color_1d77f0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预约"
+                            android:textSize="@dimen/sky_font_size_17"
+                            android:drawableLeft="@mipmap/transport_bespeak_icon"
+                            android:drawablePadding="@dimen/sky_dp_size_6"
+                            android:textColor="@color/sky_color_white"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 侧边栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@color/sky_color_white"
+        android:layout_gravity="start">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_117">
+
+            <RelativeLayout
+                android:id="@+id/transport_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_81"
+                android:layout_alignParentBottom="true">
+
+                <com.sky.app.library.component.CircleImageView
+                    android:id="@+id/transport_picture"
+                    android:layout_width="@dimen/sky_dp_size_41"
+                    android:layout_height="@dimen/sky_dp_size_41"
+                    app:civ_border_width="@dimen/sky_dp_size_0"
+                    app:civ_border_color="@color/sky_color_transparent_white"
+                    android:layout_marginLeft="@dimen/sky_dp_size_9"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/transport_sider_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    style="@style/normal_sider_font_style"
+                    android:layout_toRightOf="@id/transport_picture"
+                    android:layout_marginLeft="@dimen/sky_dp_size_8"
+                    android:layout_centerVertical="true"/>y
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/grey_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sky_dp_size_17"
+            android:layout_marginRight="@dimen/sky_dp_size_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/sky_dp_size_10">
+
+            <LinearLayout
+                android:id="@+id/transport_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/transport_order_icon"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport_sider_order"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transport_purse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/transport_purse_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport_sider_purse"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transport_settings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/transport_settings_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport_sider_settings"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:minHeight="?android:attr/actionBarSize"
+    app:layout_collapseMode="pin"
+    android:theme="@style/Theme.customer.ToolBar"
+    android:background="@color/driver_colorPrimary">
+
+    <TextView
+        android:id="@+id/driver_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="@style/normal_title_font_style"
+        android:text="@string/driver_main_title"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/driver_catch_order_btn"-->
+        <!--android:layout_width="@dimen/sky_dp_size_62"-->
+        <!--android:layout_height="@dimen/sky_dp_size_20"-->
+        <!--android:background="@drawable/driver_button_shape_selector"-->
+        <!--android:text="开始抢单"-->
+        <!--android:textColor="@color/sky_color_00a5ea"-->
+        <!--android:textSize="@dimen/sky_font_size_15"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="@dimen/sky_dp_size_17"-->
+        <!--style="?android:attr/borderlessButtonStyle"/>-->
+
+</android.support.v7.widget.Toolbar>

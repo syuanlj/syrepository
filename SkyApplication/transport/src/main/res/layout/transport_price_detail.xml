@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/transport_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/sky_dp_size_56"
+        android:orientation="vertical"
+        android:background="@color/sky_color_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_38"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/transport_tmp_1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textSize="@dimen/sky_font_size_18"
+                android:textColor="@color/sky_color_black"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/sky_dp_size_0_3"/>
+
+            <TextView
+                android:id="@+id/transport_total_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/sky_font_size_35"
+                android:gravity="center"
+                android:textColor="@color/sky_color_black"
+                android:layout_toRightOf="@id/transport_tmp_1_tv"/>
+
+            <TextView
+                android:id="@+id/transport_total_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_black"
+                android:textSize="@dimen/sky_font_size_15"
+                android:text="(0公里)"
+                android:gravity="bottom"
+                android:layout_toRightOf="@id/transport_total_price_tv"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/sky_dp_size_0_2"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sky_dp_size_30"
+            android:text="高速及停车场等费用，根据实际产生的金额由客户支付，搬运费请与司机商议"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_b8b8b8"/>
+
+        <View style="@style/grey_horizontal_line"
+            android:layout_marginTop="@dimen/sky_dp_size_27"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sky_dp_size_29">
+
+            <TextView
+                android:id="@+id/transport_car_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_4d4d4d"
+                android:textSize="@dimen/sky_dp_size_15"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+            
+            <TextView
+                android:id="@+id/transport_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sky_dp_size_15"
+                android:textColor="@color/sky_color_4d4d4d"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
