@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 聊天模块 -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#888888</color>
+    <color name="grey_less">#80888888</color>
+    <color name="blue">#f1f4f7</color>
+    <color name="chat_et_high_text">#b2b2b2</color>
+    <color name="main_textcolor">#ffffff</color>
+    <color name="chat_words_right">#4a4b4c</color>
+    
+
+    <!-- 鱼场 -->
+
+    <!-- 鱼站 -->
+    <!-- 鱼饰 -->
+    <!-- 鱼报 -->
+    <!-- 鱼榜 -->
+
+    <!-- 鱼圈 -->
+    <!-- 更新 -->
+    <color name="update_activity_bg">#e7eaf3</color>
+
+    <!-- 鱼镜 -->
+    <color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ffff0000</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="result_view">#b0000000</color>
+	<color name="possible_result_points">#c0ffff00</color>
+
+</resources>

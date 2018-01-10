@@ -1,0 +1,79 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/fujitsu/Documents/GitHub/syrepository/bMW/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/fujitsu/Documents/GitHub/syrepository/bMW/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "92,151",
+                        "endColumns": "57,55",
+                        "endOffsets": "145,202"
+                    },
+                    "to": {
+                        "startLines": "16,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "729,787",
+                        "endColumns": "57,55",
+                        "endOffsets": "782,838"
+                    }
+                },
+                {
+                    "source": "/Users/fujitsu/Documents/GitHub/syrepository/bMW/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "5,8,9,11,6,7,10,30,29,23,26,27,28,4",
+                        "startColumns": "4,4,4,4,4,4,4,1,1,4,4,1,1,4",
+                        "startOffsets": "123,251,291,394,164,204,344,848,802,577,650,701,752,82",
+                        "endColumns": "39,38,51,50,38,45,48,55,44,52,52,49,48,39",
+                        "endOffsets": "158,285,338,440,198,245,388,902,845,625,698,749,799,117"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,95,134,186,237,276,322,371,430,478,531,584,637,689",
+                        "endColumns": "39,38,51,50,38,45,48,58,47,52,52,52,51,39",
+                        "endOffsets": "90,129,181,232,271,317,366,425,473,526,579,632,684,724"
+                    }
+                },
+                {
+                    "source": "/Users/fujitsu/Documents/GitHub/syrepository/bMW/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "107,58,161",
+                        "endColumns": "52,47,52",
+                        "endOffsets": "155,101,209"
+                    },
+                    "to": {
+                        "startLines": "18,19,20",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "843,896,944",
+                        "endColumns": "52,47,52",
+                        "endOffsets": "891,939,992"
+                    }
+                },
+                {
+                    "source": "/Users/fujitsu/Documents/GitHub/syrepository/bMW/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "191,522",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "481,679"
+                    },
+                    "to": {
+                        "startLines": "21,28",
+                        "startColumns": "4,4",
+                        "startOffsets": "997,1288",
+                        "endLines": "27,30",
+                        "endColumns": "12,12",
+                        "endOffsets": "1283,1443"
+                    }
+                }
+            ]
+        }
+    ]
+}
